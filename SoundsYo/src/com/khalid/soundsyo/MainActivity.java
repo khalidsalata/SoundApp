@@ -2,7 +2,6 @@ package com.khalid.soundsyo;
 
 import java.io.File;
 
-import android.content.ComponentName;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -12,7 +11,6 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.ipaulpro.afilechooser.utils.FileUtils;
-import com.khalid.sup;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -71,9 +69,9 @@ public class MainActivity extends ActionBarActivity {
 	
 	public void startRec(View view)
 	{
-		Intent intent = new Intent(this, com.khalid.sup.MainActivity.class);
+		Intent intent = new Intent();
+		intent.setClassName("com.khalid.sup", "com.khalid.sup.MainActivity");
 		startActivity(intent);
-		
 	}
 
 }
